@@ -3,7 +3,7 @@ import os
 
 
 # 从环境变量中获取API密钥
-api_key = "iQFPqI4Suud7Wc76dXD8pqkZKb0Btj4Jd96k"
+api_key = ""
 if not api_key:
     raise ValueError("未设置WEAVIATE_API_KEY环境变量")
 auth_config = weaviate.AuthClientApiKey(api_key=api_key)
