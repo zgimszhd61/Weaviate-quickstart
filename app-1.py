@@ -1,4 +1,15 @@
 import weaviate
+<<<<<<< HEAD:app-1.py
+=======
+import os
+
+
+# 从环境变量中获取API密钥
+api_key = ""
+if not api_key:
+    raise ValueError("未设置WEAVIATE_API_KEY环境变量")
+auth_config = weaviate.AuthClientApiKey(api_key=api_key)
+>>>>>>> df6714e48363bf06058cc37356a424c2529520fc:app.py
 
 client = weaviate.Client(
     url="https://my-sandbox-m5w2izwo.weaviate.network",  # Replace with your endpoint
